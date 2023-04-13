@@ -1,0 +1,233 @@
+section.start {
+    background: linear-gradient(56deg, #000000 52%, #583728 53%);
+    width: 100%;
+    height: 100vh;
+}
+
+section.start .background-flex {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    max-width: 80%;
+    height: 90%;
+    margin: auto;
+    gap: 150px;
+}
+
+section.start .left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section.start .left-size h1 {
+    font-size: 3.7rem;
+}
+
+section.start .left-size h1 span {
+    font-size: 2.7rem;
+    font-weight: 300;
+}
+
+section.start .left-size .presentation-name {
+    font-size: 3.2rem;
+    font-weight: 500;
+    margin: 0 0 5px 0;
+}
+
+section.start .left-size p {
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+section.start .right {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+section.start .right img {
+    max-width: 100%;
+    border-radius: 170px;
+    position: relative;
+    animation: desenhoAnimacao 2.2s infinite alternate-reverse linear;
+}
+
+@keyframes desenhoAnimacao {
+    from {
+        top: -10px;
+        opacity: 0.7;
+    }
+
+    to {
+        top: 20px;
+    }
+}
+
+section.aboutMe {
+    background-color: #0e0e0e;
+    width: 100%;
+    height: 100%;
+}
+
+section.aboutMe .background-about {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    max-width: 80%;
+    margin: auto;
+}
+
+section.aboutMe .content-about {
+    display: flex;
+    align-items: center;
+}
+
+section.aboutMe .image-about {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+section.aboutMe .image-about img {
+    width: 74%;
+}
+
+section.aboutMe .title-about {
+    font-size: 2.8rem;
+    width: 60%;
+    margin: 10vw 0 10vw 0;
+}
+
+section.aboutMe .text-about {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+section.projects {
+    background-color: #0a0a0a;
+    width: 100%;
+    height: 100%;
+}
+
+section.projects .background-proj {
+    height: 100%;
+    margin: 0px 12% 0px 12%;
+}
+
+section.projects .title-proj {
+    width: 100%;
+    text-align: center;
+    font-size: 2.8rem;
+    padding: 50px 0px 50px;
+}
+
+section.projects .card-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    padding-bottom: 50px;
+}
+
+section.projects .card-container-projects {
+    background-color: #131313a1;
+    border-radius: 7px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+}
+
+
+@media screen and (max-width: 1392px) {
+    section.start .left-size h1 {
+        font-size: 2.9rem;
+    }
+
+    section.start .left-size h1 span {
+        font-size: 2.0rem;
+    }
+
+    section.start .left-size .presentation-name {
+        font-size: 2.2rem;
+    }
+
+    section.start .left-size p {
+        font-size: 1.4rem;
+    }
+
+    section.aboutMe .title-about {
+        width: 100%;
+    }
+
+    section.aboutMe .text-about {
+        font-size: 1.2rem;
+    }
+
+    section.aboutMe .image-about {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    section.start .right img {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    section.start {
+        background: black;
+        height: 100%;
+    }
+
+    section.start .background-flex {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    section.start .right {
+        order: -1;
+        margin-top: 60px;
+    }
+
+    section.start .left {
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    section.aboutMe .content-about {
+        display: flex;
+        width: 100%;
+    }
+
+    section.aboutMe .image-about {
+        display: none;
+    }
+
+    section.aboutMe .title-about {
+        align-items: center;
+        width: 100%;
+    }
+
+    section.aboutMe .text-about {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    section.projects .card-projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section.projects .card-container-projects {
+        width: 100%;
+    }
+}
